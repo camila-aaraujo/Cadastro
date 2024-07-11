@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="formulario.js"></script>
+
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form class="main">
+        
+        <div>
+            <label for="">Nome: </label>
+            <input class="input-text" type="text" id="Nome" placeholder="nome e sobrenome" required> <br><br>
+        </div>
+
+        <div> 
+            <label for="">E-mail: </label>
+            <input class="input-text" type="email" id="Email" placeholder="nome@gmail" required> <br><br>
+        </div>
+
+        <div>
+            <label for="">Idade: </label>
+            <input class="input-text" type="number" id="Idade" required >
+        </div>
+
+        <div>
+            <p>Genero: </p>
+            <input type="radio" name="genero" value="Mulher">
+            <label for="">Mulher</label>
+
+            <input type="radio" name="genero" value="Homem">
+            <label for="">Homem</label>
+
+            <input type="radio" name="genero" value="Outro">
+            <label for="">Outro</label>
+        </div>
+        <br>
+
+        <div>
+            <select class="input-text" id="">
+                <option  value="">Selecione o estado que mora</option> 
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="BA">BA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+        </div>
+
+        <br> 
+        <input type="checkbox" id="Termos">
+        <label for="">li e aceito os termos</label>
+        <br> 
+        <button class="botao" type="submit" onclick="Enviar()">Enviar</button>
+    </form>
+   
+</body>
+</html>
